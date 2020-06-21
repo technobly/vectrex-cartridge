@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name vectrex-cartridge)(type KiCad)(uri /Users/brett/code/debugging/technobly/vectrex-cartridge/hardware/libs/vectrex-cartridge.pretty)(options "")(descr ""))
+)
