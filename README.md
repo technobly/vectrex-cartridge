@@ -27,7 +27,7 @@ Ordering PCB's
 
 OSHPark is a good place to order with purple or the new "after dark" theme color scheme.  You can upload the KiCad [vextrex-cartridge.kicad_pcb](hardware/vextrex-cartridge.kicad_pcb) there directly.  I would download this entire Github repo ZIP file first though instead of just trying to save the PCB file from your browser.
 
-Another way to order PCB's is by using the included [gerbers](gerbers/vectrex-cartridge-v1.0.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
+Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-v1.0.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-v1.0-short.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
 
 Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree beveled edge.  Go with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
 
