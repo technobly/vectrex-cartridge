@@ -17,6 +17,8 @@ Also included here is a simple RGB LED board add-on.  Maybe you already have a P
 
 ![v1.0 LED Render](images/vectrex-led-v1.0-render.gif)
 
+![Example Glow](images/belugadreams.png)
+
 Got a Custom PCB logo request?
 ===
 Join the [VEXTREME Discord server](https://discord.gg/VDssGVJ) to chat with @technobly about your request
