@@ -96,12 +96,12 @@ Connection ~ 2600 1850
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO1
 U 1 1 5EE7732D
-P 10950 6900
-F 0 "#LOGO1" H 10950 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10950 6675 50  0001 C CNN
-F 2 "" H 10950 6900 50  0001 C CNN
-F 3 "~" H 10950 6900 50  0001 C CNN
-	1    10950 6900
+P 10950 6925
+F 0 "#LOGO1" H 10950 7200 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10950 6700 50  0001 C CNN
+F 2 "" H 10950 6925 50  0001 C CNN
+F 3 "~" H 10950 6925 50  0001 C CNN
+	1    10950 6925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -176,10 +176,12 @@ Wire Notes Line style solid
 	9150 3050 9150 4425
 Wire Notes Line style solid
 	7700 3050 7700 4425
-Text Notes 8325 3025 0    50   ~ 0
+Text Notes 8275 3025 0    50   ~ 0
 48.0mm
 Text Notes 7675 3625 3    50   ~ 0
 47.1mm\n
+Text Notes 9325 3275 0    50   ~ 0
+This it the short version!
 Text GLabel 5800 3200 2    50   Input ~ 0
 C_D7
 Text GLabel 5800 3100 2    50   Input ~ 0
@@ -386,12 +388,12 @@ $EndComp
 $Comp
 L vectrex-us:LOGO G1
 U 1 1 5EF1F12E
-P 9025 6825
-F 0 "G1" H 9025 6605 60  0001 C CNN
-F 1 "LOGO" H 9025 7045 60  0001 C CNN
-F 2 "vectrex-cartridge:vectrex-us-soldermask-15mm" H 9025 6825 50  0001 C CNN
-F 3 "" H 9025 6825 50  0001 C CNN
-	1    9025 6825
+P 8950 6800
+F 0 "G1" H 8950 6580 60  0001 C CNN
+F 1 "LOGO" H 8950 7020 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-us-soldermask-37mm" H 8950 6800 50  0001 C CNN
+F 3 "" H 8950 6800 50  0001 C CNN
+	1    8950 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -412,7 +414,7 @@ L Device:R R2
 U 1 1 5EF83871
 P 3550 6900
 F 0 "R2" V 3450 6550 50  0000 L CNN
-F 1 "220 0805" V 3450 6700 50  0000 L CNN
+F 1 "200 0805" V 3450 6700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 6900 50  0001 C CNN
 F 3 "~" H 3550 6900 50  0001 C CNN
 	1    3550 6900
@@ -423,7 +425,7 @@ L Device:R R3
 U 1 1 5EF84ABE
 P 3550 7100
 F 0 "R3" V 3450 6750 50  0000 L CNN
-F 1 "220 0805" V 3450 6900 50  0000 L CNN
+F 1 "200 0805" V 3450 6900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7100 50  0001 C CNN
 F 3 "~" H 3550 7100 50  0001 C CNN
 	1    3550 7100
@@ -434,7 +436,7 @@ L Device:R R4
 U 1 1 5EF84E8A
 P 3550 7300
 F 0 "R4" V 3450 6950 50  0000 L CNN
-F 1 "150 0805" V 3450 7100 50  0000 L CNN
+F 1 "120 0805" V 3450 7100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7300 50  0001 C CNN
 F 3 "~" H 3550 7300 50  0001 C CNN
 	1    3550 7300
@@ -525,6 +527,4 @@ Wire Wire Line
 	3150 7200 3150 7300
 Wire Wire Line
 	3150 7300 3400 7300
-Text Notes 9250 3275 0    50   ~ 0
-This is the short version!
 $EndSCHEMATC

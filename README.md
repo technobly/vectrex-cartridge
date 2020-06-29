@@ -1,4 +1,4 @@
-Vectrex Cartridge
+Vectrex Cartridge and Vectrex LED board
 ===
 
 So you wanna produce a Vectrex game and you need a 32KB cartridge with high score save support? Here's your reference design! Order it as is or customize it with your own graphics.  Got a 64KB game that uses John Dondzilla PB6 bankswitching?  No problem, just cut and solder jumper for the 64KB option. Don't stuff the DS2431 or R1 pull up if you don't need the high score feature.
@@ -7,9 +7,15 @@ What makes this Vectrex Cartridge design different from others out there?  Well,
 
 Yes these fit in [Sean Kelly reproduction cartridge shells](http://www.vectrexmulti.com/order2.html#!/Vectrex-Empty-Cartridge-Shells/c/38886086/offset=0&sort=normal) perfectly!
 
-![v1.0 Render](images/vectrex-cartridge-v1.0-render.gif)
+![v1.1 Cartridge Render](images/vectrex-cartridge-v1.1-render.gif)
 
-![v1.0 Render](images/vectrex-cartridge-v1.0-dimensions.png)
+![v1.1 Cartridge Short Render](images/vectrex-cartridge-short-v1.1-render.gif)
+
+![v1.1 Dimensions](images/vectrex-cartridge-v1.1-dimensions.png)
+
+Also included here is a simple RGB LED board add-on.  Maybe you already have a PCB but you don't have the cool LED? Easy, just add this one to the bottom.  It fits perfectly under most 28 pin 32KB/64KB EPROMS.
+
+![v1.0 LED Render](images/vectrex-led-v1.0-render.gif)
 
 Got a Custom PCB logo request?
 ===
@@ -18,18 +24,20 @@ Join the [VEXTREME Discord server](https://discord.gg/VDssGVJ) to chat with @tec
 BOM and Parts ordering
 ===
 
-All the parts are described in [vectrex-cartridge.csv](bom/vectrex-cartridge.csv)
+All the parts are described in [Bill of Materials](bom/)
 
-You can use this [Digi-Key shared cart](https://www.digikey.com/short/zhwv5n) to order the parts!
+You can use these Digi-Key shared carts to order the parts!
+[Vectrex Cartridge](https://www.digikey.com/short/z9jq1b)
+[Vectrex LED](https://www.digikey.com/short/z9j8bp)
 
 Ordering PCB's
 ===
 
-OSHPark is a good place to order with purple or the new "after dark" theme color scheme.  You can upload the KiCad [vextrex-cartridge.kicad_pcb](hardware/vextrex-cartridge.kicad_pcb) there directly.  I would download this entire Github repo ZIP file first though instead of just trying to save the PCB file from your browser.
+OSHPark is a good place to order with purple or the new "after dark" theme color scheme.  You can upload the KiCad [vextrex-cartridge.kicad_pcb](hardware/vextrex-cartridge.kicad_pcb) there directly.  I would download this entire Github repo ZIP file first though instead of just trying to save the PCB file from your browser.  Here's a shared link for [Vectrex LED v1.0](https://oshpark.com/shared_projects/dIH6AJOJ)
 
-Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-v1.0.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-v1.0-short.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
+Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-v1.1.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-v1.1-short.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
 
-Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree beveled edge.  Go with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
+Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree chamfered edge.  Go with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
 
 LICENSE
 ===

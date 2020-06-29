@@ -5,9 +5,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Vectrex Cartridge"
-Date "2020-06-19"
-Rev "v1.0"
-Comp ""
+Date "2020-06-28"
+Rev "v1.1"
+Comp "Brett Walach"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -168,46 +168,18 @@ F 3 "~" H 8450 3875 50  0001 C CNN
 	1    8450 3875
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H5
-U 1 1 5EF13066
-P 8100 2975
-F 0 "H5" H 8050 3125 50  0000 L CNN
-F 1 "4.2mm" H 8000 2825 50  0000 L CNN
-F 2 "vectrex-cartridge:Mounting_Hole_D4.2mm" H 8100 2975 50  0001 C CNN
-F 3 "~" H 8100 2975 50  0001 C CNN
-	1    8100 2975
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5EF13590
-P 8700 2975
-F 0 "H4" H 8650 3125 50  0000 L CNN
-F 1 "4.2mm" H 8600 2825 50  0000 L CNN
-F 2 "vectrex-cartridge:Mounting_Hole_D4.2mm" H 8700 2975 50  0001 C CNN
-F 3 "~" H 8700 2975 50  0001 C CNN
-	1    8700 2975
-	1    0    0    -1  
-$EndComp
 Wire Notes Line style solid
-	7700 2475 9150 2475
+	7700 3050 9150 3050
 Wire Notes Line style solid
 	9150 4425 7700 4425
 Wire Notes Line style solid
-	9150 2475 9150 4425
-Wire Notes Line
-	7700 3050 9150 3050
+	9150 3050 9150 4425
 Wire Notes Line style solid
-	7700 2475 7700 4425
-Text Notes 8325 2450 0    50   ~ 0
+	7700 3050 7700 4425
+Text Notes 8325 3025 0    50   ~ 0
 48.0mm
-Text Notes 7675 2925 1    50   ~ 0
-19.0mm\n
 Text Notes 7675 3625 3    50   ~ 0
 47.1mm\n
-Text Notes 9325 3275 0    50   ~ 0
-Two board size options\n———————————————\n1) 48mm x 66.1mm\n2) 48mm x 47.1mm
 Text GLabel 5800 3200 2    50   Input ~ 0
 C_D7
 Text GLabel 5800 3100 2    50   Input ~ 0
@@ -350,44 +322,44 @@ Text Notes 3650 4700 0    50   ~ 0
 $Comp
 L power:GND #PWR0107
 U 1 1 5EEF9036
-P 5950 6000
-F 0 "#PWR0107" H 5950 5750 50  0001 C CNN
-F 1 "GND" H 5955 5827 50  0000 C CNN
-F 2 "" H 5950 6000 50  0001 C CNN
-F 3 "" H 5950 6000 50  0001 C CNN
-	1    5950 6000
+P 6550 7050
+F 0 "#PWR0107" H 6550 6800 50  0001 C CNN
+F 1 "GND" H 6555 6877 50  0000 C CNN
+F 2 "" H 6550 7050 50  0001 C CNN
+F 3 "" H 6550 7050 50  0001 C CNN
+	1    6550 7050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5950 6000 5950 5900
+	6550 7050 6550 6950
 $Comp
 L Device:R R1
 U 1 1 5EEF9998
-P 4650 5700
-F 0 "R1" H 4720 5746 50  0000 L CNN
-F 1 "3.3k 0805" H 4720 5655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4580 5700 50  0001 C CNN
-F 3 "~" H 4650 5700 50  0001 C CNN
-	1    4650 5700
+P 5250 6750
+F 0 "R1" H 5320 6796 50  0000 L CNN
+F 1 "3.3k 0805" H 5320 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5180 6750 50  0001 C CNN
+F 3 "~" H 5250 6750 50  0001 C CNN
+	1    5250 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0108
 U 1 1 5EEFA2B8
-P 4650 5550
-F 0 "#PWR0108" H 4650 5400 50  0001 C CNN
-F 1 "+5V" H 4600 5700 50  0000 C CNN
-F 2 "" H 4650 5550 50  0001 C CNN
-F 3 "" H 4650 5550 50  0001 C CNN
-	1    4650 5550
+P 5250 6600
+F 0 "#PWR0108" H 5250 6450 50  0001 C CNN
+F 1 "+5V" H 5200 6750 50  0000 C CNN
+F 2 "" H 5250 6600 50  0001 C CNN
+F 3 "" H 5250 6600 50  0001 C CNN
+	1    5250 6600
 	1    0    0    -1  
 $EndComp
-Text Notes 4950 6450 0    50   ~ 0
-Optional 1KB 1-Wire memory\nfor high score saves.
+Text Notes 4600 6250 0    50   ~ 0
+1KB 1-Wire memory for high score saves (Optional)
 Wire Wire Line
-	4650 5900 4650 5850
+	5250 6950 5250 6900
 Wire Wire Line
-	4650 5900 5050 5900
+	5250 6950 5650 6950
 Wire Wire Line
 	5400 1600 5400 1650
 Wire Wire Line
@@ -395,57 +367,164 @@ Wire Wire Line
 Connection ~ 5400 1650
 Wire Wire Line
 	5400 1650 5400 2300
-Text GLabel 4500 5900 0    60   Input ~ 0
+Text GLabel 5100 6950 0    60   Input ~ 0
 V-PB6
 Wire Wire Line
-	4500 5900 4650 5900
-Connection ~ 4650 5900
+	5100 6950 5250 6950
+Connection ~ 5250 6950
 $Comp
 L ds2431:DS2431 U2
 U 1 1 5EEF703C
-P 5250 6000
-F 0 "U2" H 5350 6350 50  0000 C CNN
-F 1 "DS2431+ TO-92" H 5600 6250 50  0000 C CNN
-F 2 "vectrex-cartridge:TO-92L_HandSolder" H 5250 6000 50  0001 C CNN
-F 3 "" H 5250 6000 50  0001 C CNN
-	1    5250 6000
-	1    0    0    -1  
-$EndComp
-Text Notes 8700 6050 0    50   ~ 0
-Graphics for PCB
-$Comp
-L vectrex-us:LOGO G2
-U 1 1 5EF21F45
-P 8050 6850
-F 0 "G2" H 8050 6630 60  0001 C CNN
-F 1 "LOGO" H 8050 7070 60  0001 C CNN
-F 2 "vectrex-cartridge:vectrex-us-soldermask" H 8050 6850 50  0001 C CNN
-F 3 "" H 8050 6850 50  0001 C CNN
-	1    8050 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L vectrex-uk:LOGO G3
-U 1 1 5EF1E102
-P 10050 6300
-F 0 "G3" H 10050 6160 60  0001 C CNN
-F 1 "LOGO" H 10050 6440 60  0001 C CNN
-F 2 "vectrex-cartridge:vectrex-uk-soldermask" H 10050 6300 50  0001 C CNN
-F 3 "" H 10050 6300 50  0001 C CNN
-	1    10050 6300
+P 5850 7050
+F 0 "U2" H 5950 7400 50  0000 C CNN
+F 1 "DS2431+ TO-92" H 6200 7300 50  0000 C CNN
+F 2 "vectrex-cartridge:TO-92L_HandSolder" H 5850 7050 50  0001 C CNN
+F 3 "" H 5850 7050 50  0001 C CNN
+	1    5850 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L vectrex-us:LOGO G1
 U 1 1 5EF1F12E
-P 8000 6200
-F 0 "G1" H 8000 5980 60  0001 C CNN
-F 1 "LOGO" H 8000 6420 60  0001 C CNN
-F 2 "vectrex-cartridge:vectrex-us-soldermask" H 8000 6200 50  0001 C CNN
-F 3 "" H 8000 6200 50  0001 C CNN
-	1    8000 6200
+P 9025 6825
+F 0 "G1" H 9025 6605 60  0001 C CNN
+F 1 "LOGO" H 9025 7045 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-us-soldermask-15mm" H 9025 6825 50  0001 C CNN
+F 3 "" H 9025 6825 50  0001 C CNN
+	1    9025 6825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4500 4200 4600 4200
+$Comp
+L LED:ASMB-MTB0-0A3A2 D1
+U 1 1 5EF80BCD
+P 4000 7100
+F 0 "D1" H 4000 7650 50  0000 C CNN
+F 1 "ASMB-MTB0-0A3A2" H 3750 7550 50  0000 C CNN
+F 2 "vectrex-cartridge:LED_Avago_PLCC4_3.2x2.8mm_CW" H 4000 7600 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 4000 6650 50  0001 C CNN
+	1    4000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF83871
+P 3550 6900
+F 0 "R2" V 3450 6550 50  0000 L CNN
+F 1 "200 0805" V 3450 6700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 6900 50  0001 C CNN
+F 3 "~" H 3550 6900 50  0001 C CNN
+	1    3550 6900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EF84ABE
+P 3550 7100
+F 0 "R3" V 3450 6750 50  0000 L CNN
+F 1 "200 0805" V 3450 6900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7100 50  0001 C CNN
+F 3 "~" H 3550 7100 50  0001 C CNN
+	1    3550 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5EF84E8A
+P 3550 7300
+F 0 "R4" V 3450 6950 50  0000 L CNN
+F 1 "120 0805" V 3450 7100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7300 50  0001 C CNN
+F 3 "~" H 3550 7300 50  0001 C CNN
+	1    3550 7300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 6900 3800 6900
+Wire Wire Line
+	3800 7100 3700 7100
+Wire Wire Line
+	3700 7300 3800 7300
+Wire Wire Line
+	2550 7000 2300 7000
+Wire Wire Line
+	2300 7000 2300 7100
+Wire Wire Line
+	2300 7200 2550 7200
+Wire Wire Line
+	2550 7100 2300 7100
+Connection ~ 2300 7100
+Wire Wire Line
+	2300 7100 2300 7200
+$Comp
+L power:GND #PWR0109
+U 1 1 5EF86DF9
+P 2300 7300
+F 0 "#PWR0109" H 2300 7050 50  0001 C CNN
+F 1 "GND" H 2305 7127 50  0000 C CNN
+F 2 "" H 2300 7300 50  0001 C CNN
+F 3 "" H 2300 7300 50  0001 C CNN
+	1    2300 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7300 2300 7200
+Connection ~ 2300 7200
+$Comp
+L power:+5V #PWR0110
+U 1 1 5EF8789A
+P 4300 7050
+F 0 "#PWR0110" H 4300 6900 50  0001 C CNN
+F 1 "+5V" H 4250 7200 50  0000 C CNN
+F 2 "" H 4300 7050 50  0001 C CNN
+F 3 "" H 4300 7050 50  0001 C CNN
+	1    4300 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 7050 4300 7100
+Wire Wire Line
+	4300 7100 4200 7100
+Wire Notes Line
+	2150 6300 4400 6300
+Wire Notes Line
+	4400 6300 4400 7700
+Wire Notes Line
+	4400 7700 2150 7700
+Wire Notes Line
+	2150 7700 2150 6300
+Text Notes 2150 6250 0    50   ~ 0
+RGB LED (Optional)
+Wire Notes Line
+	4600 6300 6750 6300
+Wire Notes Line
+	6750 7700 4600 7700
+Wire Notes Line
+	6750 6300 6750 7700
+Wire Notes Line
+	4600 6300 4600 7700
+$Comp
+L Switch:SW_DIP_x03 SW1
+U 1 1 5EFC1237
+P 2850 7000
+F 0 "SW1" H 2850 6733 50  0000 C CNN
+F 1 "SW_DIP_x03" H 2850 6824 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W8.61mm_P2.54mm_LowProfile" H 2850 7000 50  0001 C CNN
+F 3 "~" H 2850 7000 50  0001 C CNN
+	1    2850 7000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 7000 3150 6900
+Wire Wire Line
+	3150 6900 3400 6900
+Wire Wire Line
+	3150 7100 3400 7100
+Wire Wire Line
+	3150 7200 3150 7300
+Wire Wire Line
+	3150 7300 3400 7300
+Text Notes 9250 3275 0    50   ~ 0
+This is the short version!
 $EndSCHEMATC

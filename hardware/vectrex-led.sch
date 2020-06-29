@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Vectrex RGB LED"
+Date "2020-06-28"
+Rev "v1.0"
+Comp "Brett Walach"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5EE7732D
+P 10950 6900
+F 0 "#LOGO1" H 10950 7175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10950 6675 50  0001 C CNN
+F 2 "" H 10950 6900 50  0001 C CNN
+F 3 "~" H 10950 6900 50  0001 C CNN
+	1    10950 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5EF54393
+P 9450 6150
+F 0 "#PWR05" H 9450 5900 50  0001 C CNN
+F 1 "GND" H 9455 5977 50  0000 C CNN
+F 2 "" H 9450 6150 50  0001 C CNN
+F 3 "" H 9450 6150 50  0001 C CNN
+	1    9450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED:ASMB-MTB0-0A3A2 D1
+U 1 1 5EF80BCD
+P 8800 5900
+F 0 "D1" H 8800 6450 50  0000 C CNN
+F 1 "ASMB-MTB0-0A3A2" H 8550 6350 50  0000 C CNN
+F 2 "vectrex-cartridge:LED_Avago_PLCC4_3.2x2.8mm_CW" H 8800 6400 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-4186EN" H 8800 5450 50  0001 C CNN
+	1    8800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5EF83871
+P 8350 5700
+F 0 "R1" V 8250 5350 50  0000 L CNN
+F 1 "200 0805" V 8250 5500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8280 5700 50  0001 C CNN
+F 3 "~" H 8350 5700 50  0001 C CNN
+	1    8350 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EF84ABE
+P 8350 5900
+F 0 "R2" V 8250 5550 50  0000 L CNN
+F 1 "200 0805" V 8250 5700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8280 5900 50  0001 C CNN
+F 3 "~" H 8350 5900 50  0001 C CNN
+	1    8350 5900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EF84E8A
+P 8350 6100
+F 0 "R3" V 8250 5750 50  0000 L CNN
+F 1 "120 0805" V 8250 5900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8280 6100 50  0001 C CNN
+F 3 "~" H 8350 6100 50  0001 C CNN
+	1    8350 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8500 5700 8600 5700
+Wire Wire Line
+	8600 5900 8500 5900
+Wire Wire Line
+	8500 6100 8600 6100
+Wire Wire Line
+	7350 5800 7250 5800
+Wire Wire Line
+	7250 5800 7250 5900
+Wire Wire Line
+	7250 6000 7350 6000
+Wire Wire Line
+	7350 5900 7250 5900
+Connection ~ 7250 5900
+Wire Wire Line
+	7250 5900 7250 6000
+$Comp
+L power:GND #PWR01
+U 1 1 5EF86DF9
+P 7250 6100
+F 0 "#PWR01" H 7250 5850 50  0001 C CNN
+F 1 "GND" H 7255 5927 50  0000 C CNN
+F 2 "" H 7250 6100 50  0001 C CNN
+F 3 "" H 7250 6100 50  0001 C CNN
+	1    7250 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 6100 7250 6000
+Connection ~ 7250 6000
+$Comp
+L power:+5V #PWR02
+U 1 1 5EF8789A
+P 9100 5850
+F 0 "#PWR02" H 9100 5700 50  0001 C CNN
+F 1 "+5V" H 9050 6000 50  0000 C CNN
+F 2 "" H 9100 5850 50  0001 C CNN
+F 3 "" H 9100 5850 50  0001 C CNN
+	1    9100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 5850 9100 5900
+Wire Wire Line
+	9100 5900 9000 5900
+$Comp
+L Switch:SW_DIP_x03 SW1
+U 1 1 5EFC1237
+P 7650 5800
+F 0 "SW1" H 7650 5533 50  0000 C CNN
+F 1 "SW_DIP_x03" H 7650 5624 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx03_Slide_6.7x9.18mm_W8.61mm_P2.54mm_LowProfile" H 7650 5800 50  0001 C CNN
+F 3 "~" H 7650 5800 50  0001 C CNN
+	1    7650 5800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 5800 7950 5700
+Wire Wire Line
+	7950 5700 8200 5700
+Wire Wire Line
+	7950 5900 8200 5900
+Wire Wire Line
+	7950 6000 7950 6100
+Wire Wire Line
+	7950 6100 8200 6100
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EFAD6B4
+P 9450 6050
+F 0 "H2" H 9550 6100 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9550 6008 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9450 6050 50  0001 C CNN
+F 3 "~" H 9450 6050 50  0001 C CNN
+	1    9450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EFAF3C3
+P 9450 5650
+F 0 "H1" H 9350 5653 50  0000 R CNN
+F 1 "MountingHole_Pad" H 9350 5698 50  0001 R CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 9450 5650 50  0001 C CNN
+F 3 "~" H 9450 5650 50  0001 C CNN
+	1    9450 5650
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5EFAF7DE
+P 9450 5550
+F 0 "#PWR04" H 9450 5400 50  0001 C CNN
+F 1 "+5V" H 9465 5723 50  0000 C CNN
+F 2 "" H 9450 5550 50  0001 C CNN
+F 3 "" H 9450 5550 50  0001 C CNN
+	1    9450 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L vectrex-us:LOGO G1
+U 1 1 5EFC43E6
+P 9000 6825
+F 0 "G1" H 9000 6605 60  0001 C CNN
+F 1 "LOGO" H 9000 7045 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-us-soldermask-15mm" H 9000 6825 50  0001 C CNN
+F 3 "" H 9000 6825 50  0001 C CNN
+	1    9000 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EFD4190
+P 9700 5600
+F 0 "TP1" H 9650 5650 50  0000 R CNN
+F 1 "TestPoint" H 9642 5717 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 9900 5600 50  0001 C CNN
+F 3 "~" H 9900 5600 50  0001 C CNN
+	1    9700 5600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9700 5600 9700 5550
+Wire Wire Line
+	9700 5550 9450 5550
+Connection ~ 9450 5550
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EFD7029
+P 9700 6100
+F 0 "TP2" H 9900 6200 50  0000 R CNN
+F 1 "TestPoint" H 9642 6217 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 9900 6100 50  0001 C CNN
+F 3 "~" H 9900 6100 50  0001 C CNN
+	1    9700 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 6100 9700 6150
+Wire Wire Line
+	9700 6150 9450 6150
+Connection ~ 9450 6150
+$EndSCHEMATC
