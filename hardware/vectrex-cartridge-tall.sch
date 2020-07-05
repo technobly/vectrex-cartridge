@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Vectrex Cartridge"
-Date "2020-06-28"
-Rev "v1.1"
+Date "2020-07-05"
+Rev "v1.2"
 Comp "Brett Walach"
 Comment1 ""
 Comment2 ""
@@ -83,7 +83,7 @@ Text GLabel 3100 4850 2    50   Input ~ 0
 C_A14
 $Comp
 L vectrex-edge-connector:vectrex-edge-connector CON1
-U 1 1 59F1631A
+U 1 1 5F013EF4
 P 2550 3900
 F 0 "CON1" H 2200 5750 60  0000 C CNN
 F 1 "vectrex-edge-connector" V 2150 3650 60  0000 C CNN
@@ -94,19 +94,8 @@ F 3 "" H 2550 4600 60  0001 C CNN
 $EndComp
 Connection ~ 2600 1850
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
-U 1 1 5EE7732D
-P 10950 6900
-F 0 "#LOGO1" H 10950 7175 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 10950 6675 50  0001 C CNN
-F 2 "" H 10950 6900 50  0001 C CNN
-F 3 "~" H 10950 6900 50  0001 C CNN
-	1    10950 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0101
-U 1 1 5EEE6CE5
+U 1 1 5F013EF6
 P 2600 1700
 F 0 "#PWR0101" H 2600 1550 50  0001 C CNN
 F 1 "+5V" H 2615 1873 50  0000 C CNN
@@ -119,7 +108,7 @@ Wire Wire Line
 	2600 1700 2600 1850
 $Comp
 L power:GND #PWR0102
-U 1 1 5EEFB74E
+U 1 1 5F013EFE
 P 2550 5650
 F 0 "#PWR0102" H 2550 5400 50  0001 C CNN
 F 1 "GND" H 2555 5477 50  0000 C CNN
@@ -135,51 +124,6 @@ Wire Wire Line
 	2550 5550 2650 5550
 Wire Wire Line
 	2550 5550 2550 5650
-$Comp
-L Mechanical:MountingHole H1
-U 1 1 5EF10A41
-P 8950 3875
-F 0 "H1" H 8900 4025 50  0000 L CNN
-F 1 "3.7mm" H 8850 3725 50  0000 L CNN
-F 2 "vectrex-cartridge:Mounting_Hole_D3.7mm" H 8950 3875 50  0001 C CNN
-F 3 "~" H 8950 3875 50  0001 C CNN
-	1    8950 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5EF12821
-P 7900 3875
-F 0 "H3" H 7850 4025 50  0000 L CNN
-F 1 "3.7mm" H 7800 3725 50  0000 L CNN
-F 2 "vectrex-cartridge:Mounting_Hole_D3.7mm" H 7900 3875 50  0001 C CNN
-F 3 "~" H 7900 3875 50  0001 C CNN
-	1    7900 3875
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5EF12D4B
-P 8450 3875
-F 0 "H2" H 8400 4025 50  0000 L CNN
-F 1 "5.2mm" H 8350 3725 50  0000 L CNN
-F 2 "vectrex-cartridge:Mounting_Hole_D5.2mm" H 8450 3875 50  0001 C CNN
-F 3 "~" H 8450 3875 50  0001 C CNN
-	1    8450 3875
-	1    0    0    -1  
-$EndComp
-Wire Notes Line style solid
-	7700 3050 9150 3050
-Wire Notes Line style solid
-	9150 4425 7700 4425
-Wire Notes Line style solid
-	9150 3050 9150 4425
-Wire Notes Line style solid
-	7700 3050 7700 4425
-Text Notes 8325 3025 0    50   ~ 0
-48.0mm
-Text Notes 7675 3625 3    50   ~ 0
-47.1mm\n
 Text GLabel 5800 3200 2    50   Input ~ 0
 C_D7
 Text GLabel 5800 3100 2    50   Input ~ 0
@@ -334,7 +278,7 @@ Wire Wire Line
 	6550 7050 6550 6950
 $Comp
 L Device:R R1
-U 1 1 5EEF9998
+U 1 1 5F013EFC
 P 5250 6750
 F 0 "R1" H 5320 6796 50  0000 L CNN
 F 1 "3.3k 0805" H 5320 6705 50  0000 L CNN
@@ -345,7 +289,7 @@ F 3 "~" H 5250 6750 50  0001 C CNN
 $EndComp
 $Comp
 L power:+5V #PWR0108
-U 1 1 5EEFA2B8
+U 1 1 5F013EFD
 P 5250 6600
 F 0 "#PWR0108" H 5250 6450 50  0001 C CNN
 F 1 "+5V" H 5200 6750 50  0000 C CNN
@@ -378,20 +322,9 @@ U 1 1 5EEF703C
 P 5850 7050
 F 0 "U2" H 5950 7400 50  0000 C CNN
 F 1 "DS2431+ TO-92" H 6200 7300 50  0000 C CNN
-F 2 "vectrex-cartridge:TO-92L_HandSolder" H 5850 7050 50  0001 C CNN
+F 2 "vectrex-cartridge:TO-92_Inline_BW" H 5850 7050 50  0001 C CNN
 F 3 "" H 5850 7050 50  0001 C CNN
 	1    5850 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L vectrex-us:LOGO G1
-U 1 1 5EF1F12E
-P 9025 6825
-F 0 "G1" H 9025 6605 60  0001 C CNN
-F 1 "LOGO" H 9025 7045 60  0001 C CNN
-F 2 "vectrex-cartridge:vectrex-us-soldermask-15mm" H 9025 6825 50  0001 C CNN
-F 3 "" H 9025 6825 50  0001 C CNN
-	1    9025 6825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -412,7 +345,7 @@ L Device:R R2
 U 1 1 5EF83871
 P 3550 6900
 F 0 "R2" V 3450 6550 50  0000 L CNN
-F 1 "220 0805" V 3450 6700 50  0000 L CNN
+F 1 "200 0805" V 3450 6700 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 6900 50  0001 C CNN
 F 3 "~" H 3550 6900 50  0001 C CNN
 	1    3550 6900
@@ -423,7 +356,7 @@ L Device:R R3
 U 1 1 5EF84ABE
 P 3550 7100
 F 0 "R3" V 3450 6750 50  0000 L CNN
-F 1 "220 0805" V 3450 6900 50  0000 L CNN
+F 1 "200 0805" V 3450 6900 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7100 50  0001 C CNN
 F 3 "~" H 3550 7100 50  0001 C CNN
 	1    3550 7100
@@ -434,7 +367,7 @@ L Device:R R4
 U 1 1 5EF84E8A
 P 3550 7300
 F 0 "R4" V 3450 6950 50  0000 L CNN
-F 1 "150 0805" V 3450 7100 50  0000 L CNN
+F 1 "120 0805" V 3450 7100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 7300 50  0001 C CNN
 F 3 "~" H 3550 7300 50  0001 C CNN
 	1    3550 7300
@@ -525,6 +458,108 @@ Wire Wire Line
 	3150 7200 3150 7300
 Wire Wire Line
 	3150 7300 3400 7300
-Text Notes 9250 3275 0    50   ~ 0
-This is the short version!
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F01A0BA
+P 7825 4100
+F 0 "H3" H 7775 4250 50  0000 L CNN
+F 1 "3.7mm" H 7725 3950 50  0000 L CNN
+F 2 "vectrex-cartridge:Mounting_Hole_D3.7mm" H 7825 4100 50  0001 C CNN
+F 3 "~" H 7825 4100 50  0001 C CNN
+	1    7825 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F01A0C0
+P 8375 4100
+F 0 "H2" H 8325 4250 50  0000 L CNN
+F 1 "5.2mm" H 8275 3950 50  0000 L CNN
+F 2 "vectrex-cartridge:Mounting_Hole_D5.2mm" H 8375 4100 50  0001 C CNN
+F 3 "~" H 8375 4100 50  0001 C CNN
+	1    8375 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 5F01A0C6
+P 8025 3200
+F 0 "H5" H 7975 3350 50  0000 L CNN
+F 1 "4.2mm" H 7925 3050 50  0000 L CNN
+F 2 "vectrex-cartridge:Mounting_Hole_D4.2mm" H 8025 3200 50  0001 C CNN
+F 3 "~" H 8025 3200 50  0001 C CNN
+	1    8025 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F01A0CC
+P 8625 3200
+F 0 "H4" H 8575 3350 50  0000 L CNN
+F 1 "4.2mm" H 8525 3050 50  0000 L CNN
+F 2 "vectrex-cartridge:Mounting_Hole_D4.2mm" H 8625 3200 50  0001 C CNN
+F 3 "~" H 8625 3200 50  0001 C CNN
+	1    8625 3200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line style solid
+	7625 2700 9075 2700
+Wire Notes Line style solid
+	9075 4650 7625 4650
+Wire Notes Line style solid
+	9075 2700 9075 4650
+Wire Notes Line style solid
+	7625 2700 7625 4650
+Text Notes 8275 2675 0    50   ~ 0
+48.0mm
+Text Notes 7600 3550 3    50   ~ 0
+66.1mm\n
+Text Notes 9250 3500 0    50   ~ 0
+This is the tall version
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5F021A94
+P 10950 6300
+F 0 "#LOGO1" H 10950 6575 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10950 6075 50  0001 C CNN
+F 2 "" H 10950 6300 50  0001 C CNN
+F 3 "~" H 10950 6300 50  0001 C CNN
+	1    10950 6300
+	1    0    0    -1  
+$EndComp
+Text Notes 8750 7125 0    50   ~ 0
+Graphics for PCB
+$Comp
+L vectrex-uk:LOGO G3
+U 1 1 5F021AA1
+P 10050 6850
+F 0 "G3" H 10050 6710 60  0001 C CNN
+F 1 "LOGO" H 10050 6990 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-uk-soldermask" H 10050 6850 50  0001 C CNN
+F 3 "" H 10050 6850 50  0001 C CNN
+	1    10050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L vectrex-us:LOGO G1
+U 1 1 5F021AA7
+P 8000 6775
+F 0 "G1" H 8000 6555 60  0001 C CNN
+F 1 "LOGO" H 8000 6995 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-us-soldermask" H 8000 6775 50  0001 C CNN
+F 3 "" H 8000 6775 50  0001 C CNN
+	1    8000 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F01A0B4
+P 8875 4100
+F 0 "H1" H 8825 4250 50  0000 L CNN
+F 1 "3.7mm" H 8775 3950 50  0000 L CNN
+F 2 "vectrex-cartridge:Mounting_Hole_D3.7mm" H 8875 4100 50  0001 C CNN
+F 3 "~" H 8875 4100 50  0001 C CNN
+	1    8875 4100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

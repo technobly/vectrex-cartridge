@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Vectrex Cartridge"
-Date "2020-06-28"
-Rev "v1.1"
+Date "2020-07-05"
+Rev "v1.2"
 Comp "Brett Walach"
 Comment1 ""
 Comment2 ""
@@ -380,7 +380,7 @@ U 1 1 5EEF703C
 P 5850 7050
 F 0 "U2" H 5950 7400 50  0000 C CNN
 F 1 "DS2431+ TO-92" H 6200 7300 50  0000 C CNN
-F 2 "vectrex-cartridge:TO-92L_HandSolder" H 5850 7050 50  0001 C CNN
+F 2 "vectrex-cartridge:TO-92_Inline_BW" H 5850 7050 50  0001 C CNN
 F 3 "" H 5850 7050 50  0001 C CNN
 	1    5850 7050
 	1    0    0    -1  
@@ -527,4 +527,15 @@ Wire Wire Line
 	3150 7200 3150 7300
 Wire Wire Line
 	3150 7300 3400 7300
+$Comp
+L vectrex-us:LOGO G2
+U 1 1 5F02F273
+P 10125 6225
+F 0 "G2" H 10125 6005 60  0001 C CNN
+F 1 "LOGO" H 10125 6445 60  0001 C CNN
+F 2 "vectrex-cartridge:vectrex-us-soldermask-15mm" H 10125 6225 50  0001 C CNN
+F 3 "" H 10125 6225 50  0001 C CNN
+	1    10125 6225
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

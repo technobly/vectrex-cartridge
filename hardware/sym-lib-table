@@ -3,4 +3,5 @@
   (lib (name ds2431)(type Legacy)(uri /Users/brett/code/debugging/technobly/vectrex-cartridge/hardware/libs/DS2431.lib)(options "")(descr ""))
   (lib (name vectrex-uk)(type Legacy)(uri /Users/brett/code/debugging/technobly/vectrex-cartridge/hardware/libs/vectrex-uk.lib)(options "")(descr ""))
   (lib (name vectrex-us)(type Legacy)(uri /Users/brett/code/debugging/technobly/vectrex-cartridge/hardware/libs/vectrex-us.lib)(options "")(descr ""))
+  (lib (name vectrex-cartridge-short-rescue)(type Legacy)(uri ${KIPRJMOD}/vectrex-cartridge-short-rescue.lib)(options "")(descr "")(disabled))
 )

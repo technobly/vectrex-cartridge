@@ -1,4 +1,4 @@
-20707808548763
+27085184721763
 vectrex-cartridge
 LED_Avago_PLCC4_3.2x2.8mm_CW
 https://docs.broadcom.com/docs/AV02-4186EN
@@ -49,6 +49,13 @@ to-92 sc-43 sc-43a sot54 PA33 transistor
 3
 3
 vectrex-cartridge
+TO-92_Inline_BW
+TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)
+to-92 sc-43 sc-43a sot54 PA33 transistor
+0
+3
+3
+vectrex-cartridge
 vectrex-edge-connector-thinner-no-soldermask
 
 
@@ -85,6 +92,27 @@ vectrex-us-soldermask
 0
 vectrex-cartridge
 vectrex-us-soldermask-15mm
+
+
+0
+0
+0
+vectrex-cartridge
+vectrex-us-soldermask-28mm
+
+
+0
+0
+0
+vectrex-cartridge
+vectrex-us-soldermask-33mm
+
+
+0
+0
+0
+vectrex-cartridge
+vectrex-us-soldermask-37mm
 
 
 0
