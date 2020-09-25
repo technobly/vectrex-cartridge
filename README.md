@@ -29,8 +29,8 @@ BOM and Parts ordering
 All the parts are described in [Bill of Materials](bom/)
 
 You can use these Digi-Key shared carts to order the parts!
-[Vectrex Cartridge](https://www.digikey.com/short/z9jq1b) or
-[Vectrex LED](https://www.digikey.com/short/z9j8bp)
+[Vectrex Cartridge](https://www.digikey.com/short/z2vf9n) or
+[Vectrex LED](https://www.digikey.com/short/z2vf4d)
 
 Ordering PCB's
 ===
