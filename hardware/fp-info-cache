@@ -1,4 +1,11 @@
-27085184721763
+30302960985763
+vectrex-cartridge
+LED_0606_1616Metric_Pad1.05x0.6mm_HandSolder
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+4
+4
 vectrex-cartridge
 LED_Avago_PLCC4_3.2x2.8mm_CW
 https://docs.broadcom.com/docs/AV02-4186EN
@@ -27,6 +34,13 @@ solder Pin_ press fit
 0
 0
 0
+vectrex-cartridge
+R_0603_1608Metric_Pad1.05x0.95mm_HandSolder_Narrow
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
 vectrex-cartridge
 SW_SPDT_K3-1296S-E2
 Ultraminiature Surface Mount Slide Switch, right-angle, https://www.ckswitches.com/media/1424/pcm.pdf

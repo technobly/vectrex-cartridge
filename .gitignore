@@ -1,2 +1,5 @@
+hardware/vectrex-cartridge-short-backups/*
+hardware/vectrex-cartridge-tall-backups/*
+hardware/vectrex-led-backups/*
 *.DS_Store
 *.bak
