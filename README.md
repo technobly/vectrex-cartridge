@@ -1,7 +1,9 @@
 Vectrex Cartridge and Vectrex LED board
 ===
 
-So you wanna produce a Vectrex game and you need a 32KB cartridge with high score save support? Here's your reference design! Order it as is or customize it with your own graphics.  Got a 64KB game that uses John Dondzilla PB6 bankswitching?  No problem, just cut and solder jumper for the 64KB option. Don't stuff the DS2431 or R1 pull up if you don't need the high score feature.
+So you wanna produce a Vectrex game and you need a 32KB cartridge with high score save support? Here's your reference design! Order it as is or customize it with your own graphics.  Got a 64KB game that uses John Dondzilla PB6 bankswitching?  No problem, that's supported by default.  If you want to instead take advantage of the 1-wire high score save option with the U2 DS2431+ and R1 3.3k pull-up resistor, just cut the jumper 1-2 and solder jumper 2-3. Of course to save cost, don't stuff the DS2431+ or R1 pull-up resistor if you don't need the high score feature.
+
+The RGB LED is also optional, but looks great in the translucent cartridge shells.  It lights up one of 8 colors based on the Red-Greec-Blue DIP switch, yes black is a color of light ;-)
 
 What makes this Vectrex Cartridge design different from others out there?  Well, the design is originally based on Frank Buss' Vectrex cart edge connector, but it has been significantly fixed.  The soldermask has been removed from around all of the fingers, the fingers themselves are not as wide as Frank's, and the spacing of everything has been updated to match original carts as close as possible.
 
