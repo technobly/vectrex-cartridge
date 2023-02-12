@@ -41,7 +41,9 @@ OSHPark is a good place to order with purple or the new "after dark" theme color
 
 Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-tall-v1.2.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-short-v1.2.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
 
-Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree chamfered edge.  Go with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
+## :pencil: **Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree chamfered edge. [Check out my test video here on why you don't want to settle for HASL finish.](https://www.youtube.com/watch?v=6tANHqar0rI&ab_channel=PlayVectrex)**
+
+Or with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
 
 LICENSE
 ===
