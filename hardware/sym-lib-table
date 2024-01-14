@@ -1,7 +1,9 @@
 (sym_lib_table
+  (version 7)
   (lib (name "vectrex-edge-connector")(type "KiCad")(uri "${KIPRJMOD}/libs/vectrex-edge-connector.kicad_sym")(options "")(descr ""))
   (lib (name "ds2431")(type "KiCad")(uri "${KIPRJMOD}/libs/DS2431.kicad_sym")(options "")(descr ""))
   (lib (name "vectrex-uk")(type "KiCad")(uri "${KIPRJMOD}/libs/vectrex-uk.kicad_sym")(options "")(descr ""))
   (lib (name "vectrex-us")(type "KiCad")(uri "${KIPRJMOD}/libs/vectrex-us.kicad_sym")(options "")(descr ""))
   (lib (name "led-0606")(type "KiCad")(uri "${KIPRJMOD}/libs/led-0606.kicad_sym")(options "")(descr ""))
+  (lib (name "DS2431G+")(type "KiCad")(uri "${KIPRJMOD}/libs/DS2431G+.kicad_sym")(options "")(descr ""))
 )

@@ -9,11 +9,13 @@ What makes this Vectrex Cartridge design different from others out there?  Well,
 
 Yes these fit in [Sean Kelly reproduction cartridge shells](http://www.vectrexmulti.com/order2.html#!/Vectrex-Empty-Cartridge-Shells/c/38886086/offset=0&sort=normal) perfectly!
 
-![v1.2 Cartridge Render](images/vectrex-cartridge-tall-v1.2-render.gif)
+![v1.4 Cartridge Short Render](images/vectrex-cartridge-short-v1.4-bot.png)
 
-![v1.2 Cartridge Short Render](images/vectrex-cartridge-short-v1.2-render.gif)
+![v1.4 Cartridge Short Render](images/vectrex-cartridge-short-v1.4-top.png)
 
 ![Dimensions](images/vectrex-cartridge-dimensions.png)
+
+![v1.2 Cartridge Render](images/vectrex-cartridge-tall-v1.2-render.gif)
 
 Also included here is a simple RGB LED board add-on.  Maybe you already have a PCB but you don't have the cool LED? Easy, just add this one to the bottom.  It fits perfectly under most 28 pin 32KB/64KB EPROMS.
 
@@ -39,9 +41,11 @@ Ordering PCB's
 
 OSHPark is a good place to order with purple or the new "after dark" theme color scheme.  You can upload the KiCad `vextrex-cartridge-tall.kicad_pcb` or `vextrex-cartridge-short.kicad_pcb` there directly.  I would download this entire Github repo ZIP file first though instead of just trying to save the PCB file from your browser.  Here's a shared link for [Vectrex LED v1.0](https://oshpark.com/shared_projects/dIH6AJOJ)
 
-Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-tall-v1.2.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-short-v1.2.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
+Another way to order PCB's is by using the included [gerbers-tall-design](gerbers/vectrex-cartridge-tall-v1.2.zip) or [gerbers-short-design](gerbers/vectrex-cartridge-short-v1.4.zip) and uploading those with all of the necessary specs to companies like [PCBWay](https://www.pcbway.com) or [JLCPCB](https://jlcpcb.com)
 
 ## :pencil: **Don't forget to make your board finish at least ENIG (gold flash) with a 45 degree chamfered edge. [Check out my test video here on why you don't want to settle for HASL finish.](https://www.youtube.com/watch?v=6tANHqar0rI&ab_channel=PlayVectrex)**
+
+## :boom: **[How to Build a Vectrex Game Cartridge](https://www.youtube.com/watch?v=CAzmB-9mdWY)**
 
 Or with hard gold contacts if you really want to spend some money, and make a cart that will last forever.
 
